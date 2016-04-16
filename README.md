@@ -1,6 +1,6 @@
 # 对外接口（写操作） 
  
-### 创建预约: Post /reservations/tabke
+### 创建预约: Post /reservations/take
 
 参数说明 
 
