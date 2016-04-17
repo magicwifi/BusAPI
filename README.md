@@ -53,6 +53,19 @@
 * {result：200} 调用成功
 * {result：400} 调用失败
 
+### 用户登录: Post /passenger_login
+
+参数说明 
+
+* name: 用户名（非空）  
+* password: 密码（非空）
+
+
+测试程序 python login_guest.py  zhangzch zhangzch
+
+返回值：
+
+* passenger_id 用户id
 
 ### 签到: Post /takes/register
 
