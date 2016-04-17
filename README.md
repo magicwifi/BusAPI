@@ -76,10 +76,7 @@
 ---
 
 
-### 获取车次位置信息: Get /show_bus_all.json
-
-
-
+### 获取全部车次信息: Get /show_bus_all.json
 
 
 返回说明：
@@ -111,7 +108,39 @@
 ```
 ---
 
+### 获取独立车次信息: Get /show_bus_detail/3.json
 
+参数说明 
+
+* bus_number_id: 车次号（非空）
+
+
+
+返回说明：
+```javascript
+{"code":"200", #返回成功
+,"bus_number": #车次信息
+{"id":3,
+"name":"线路五第一班",
+"bus_route_id":2,
+"start_time":17, #发车时间
+"created_at":"2016-04-16T11:31:56.000+08:00",
+"updated_at":"2016-04-16T11:31:56.000+08:00",
+"capacity":60}," #可载客
+driver": #司机信息
+{"lat":50.0,"lng":50.0, #位置信息
+"running":false,
+"name":"James", #司机姓名
+"bus_number_id":3},
+"route": #路线信息
+{"bus_number_id":3,
+"sites": #各站信息
+["北京市天通苑北地铁站","中国北京市昌平区七北路北七家王府街1号","北京市昌平区未来科技城鲁疃西路"]}
+
+}
+}
+```
+---
 
 
 
