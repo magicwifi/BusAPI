@@ -74,3 +74,45 @@
 }
 ```
 ---
+
+
+### 获取车次位置信息: Get /show_bus_all.json
+
+
+
+
+
+返回说明：
+```javascript
+{"code":"200",
+"bus_numbers":[ #线路信息
+{"id":1,
+"name":"线路七第一班", #名称
+"bus_route_id":1,
+"start_time":17, #发车时间
+"created_at":"2016-04-16T11:15:50.000+08:00","updated_at":"2016-04-16T11:15:50.000+08:00",
+"capacity":60} #容量
+
+...
+
+"drivers":[ #司机信息
+{"lat":40.1345,
+"lng":116.432,
+"running":false,
+"name":"huangzhe",
+"bus_number_id":1},
+...
+
+"routes": #各站点信息
+[{"bus_number_id":1,
+"sites":["北京市芍药居地铁站","北京市望京西地铁站","北京市昌平区未来科技城鲁疃西路"]}
+...
+
+```
+---
+
+
+
+
+
+
